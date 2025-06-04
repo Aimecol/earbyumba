@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diocese of Byumba - Job Opportunities</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Top Header -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="logo-section">
+                        <div class="logo-container">
+                            <img src="images/logo/logo.png" alt="Diocese of Byumba Logo" class="diocese-logo">
+                        </div>
+                        <div class="diocese-info">
+                            <h1 class="diocese-name">Diocese of Byumba</h1>
+                            <p class="diocese-subtitle">Diyosezi ya Byumba</p>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+
+                    <div class="header-actions">
+                        <div class="language-toggle">
+                            <button class="lang-btn active" data-lang="en">EN</button>
+                            <button class="lang-btn" data-lang="rw">RW</button>
+                            <button class="lang-btn" data-lang="fr">FR</button>
+                        </div>
+                        <a href="login.html" class="login-btn">
+                            <i class="fas fa-user"></i>
+                            <span class="login-text">Login</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="navigation" id="mainNavigation">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificates</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="jobs.html" class="nav-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Jobs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bishop-meeting.html" class="nav-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Bishop Meeting</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">
+                            <i class="fas fa-blog"></i>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+
+                    <!-- Mobile-only items -->
+                    <li class="nav-item mobile-only">
+                        <div class="mobile-language-toggle">
+                            <span class="mobile-lang-label">Language:</span>
+                            <div class="mobile-lang-buttons">
+                                <button class="lang-btn active" data-lang="en">EN</button>
+                                <button class="lang-btn" data-lang="rw">RW</button>
+                                <button class="lang-btn" data-lang="fr">FR</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item mobile-only">
+                        <a href="login.html" class="nav-link mobile-login">
+                            <i class="fas fa-user"></i>
+                            <span>Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h2 class="page-title">Job Opportunities</h2>
+                <p class="page-description">Explore career opportunities within the Diocese of Byumba</p>
+            </div>
+
+            <!-- Job Search Section -->
+            <div class="search-section">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="jobSearch" placeholder="Search jobs...">
+                    </div>
+                    <div class="filter-dropdown">
+                        <select id="jobTypeFilter">
+                            <option value="">All Job Types</option>
+                            <option value="full-time">Full Time</option>
+                            <option value="part-time">Part Time</option>
+                            <option value="contract">Contract</option>
+                            <option value="volunteer">Volunteer</option>
+                        </select>
+                    </div>
+                    <div class="filter-dropdown">
+                        <select id="departmentFilter">
+                            <option value="">All Departments</option>
+                            <option value="administration">Administration</option>
+                            <option value="education">Education</option>
+                            <option value="pastoral">Pastoral Care</option>
+                            <option value="finance">Finance</option>
+                            <option value="maintenance">Maintenance</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job Listings -->
+            <div class="jobs-grid" id="jobsGrid">
+                <!-- Administrative Assistant -->
+                <div class="job-card" data-type="full-time" data-department="administration">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="job-badge full-time">Full Time</div>
+                    </div>
+                    <div class="job-content">
+                        <h3 class="job-title">Administrative Assistant</h3>
+                        <p class="job-department">
+                            <i class="fas fa-building"></i>
+                            Administration Department
+                        </p>
+                        <p class="job-description">
+                            Support daily administrative operations, manage correspondence, and assist with office coordination.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Byumba Diocese Office</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>Posted: Dec 15, 2024</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>Deadline: Jan 15, 2025</span>
+                            </div>
+                        </div>
+                        <div class="job-requirements">
+                            <h4>Key Requirements:</h4>
+                            <ul>
+                                <li>Bachelor's degree in Administration or related field</li>
+                                <li>2+ years of administrative experience</li>
+                                <li>Proficiency in MS Office Suite</li>
+                                <li>Excellent communication skills in English and Kinyarwanda</li>
+                            </ul>
+                        </div>
+                        <button class="apply-job-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Youth Coordinator -->
+                <div class="job-card" data-type="full-time" data-department="pastoral">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="job-badge full-time">Full Time</div>
+                    </div>
+                    <div class="job-content">
+                        <h3 class="job-title">Youth Coordinator</h3>
+                        <p class="job-department">
+                            <i class="fas fa-building"></i>
+                            Pastoral Care Department
+                        </p>
+                        <p class="job-description">
+                            Develop and implement youth programs, organize events, and provide spiritual guidance to young people.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Various Parishes</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>Posted: Dec 10, 2024</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>Deadline: Jan 10, 2025</span>
+                            </div>
+                        </div>
+                        <div class="job-requirements">
+                            <h4>Key Requirements:</h4>
+                            <ul>
+                                <li>Degree in Theology, Social Work, or related field</li>
+                                <li>Experience working with youth</li>
+                                <li>Strong leadership and organizational skills</li>
+                                <li>Commitment to Catholic values and teachings</li>
+                            </ul>
+                        </div>
+                        <button class="apply-job-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Finance Officer -->
+                <div class="job-card" data-type="full-time" data-department="finance">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="job-badge full-time">Full Time</div>
+                    </div>
+                    <div class="job-content">
+                        <h3 class="job-title">Finance Officer</h3>
+                        <p class="job-department">
+                            <i class="fas fa-building"></i>
+                            Finance Department
+                        </p>
+                        <p class="job-description">
+                            Manage financial records, prepare reports, and ensure compliance with financial regulations.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Byumba Diocese Office</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>Posted: Dec 8, 2024</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>Deadline: Jan 8, 2025</span>
+                            </div>
+                        </div>
+                        <div class="job-requirements">
+                            <h4>Key Requirements:</h4>
+                            <ul>
+                                <li>Bachelor's degree in Accounting or Finance</li>
+                                <li>CPA certification preferred</li>
+                                <li>3+ years of financial management experience</li>
+                                <li>Knowledge of accounting software</li>
+                            </ul>
+                        </div>
+                        <button class="apply-job-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- School Teacher -->
+                <div class="job-card" data-type="part-time" data-department="education">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="job-badge part-time">Part Time</div>
+                    </div>
+                    <div class="job-content">
+                        <h3 class="job-title">Primary School Teacher</h3>
+                        <p class="job-department">
+                            <i class="fas fa-building"></i>
+                            Education Department
+                        </p>
+                        <p class="job-description">
+                            Teach primary school students in various subjects and contribute to their holistic development.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>St. Mary's Primary School</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>Posted: Dec 5, 2024</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>Deadline: Jan 5, 2025</span>
+                            </div>
+                        </div>
+                        <div class="job-requirements">
+                            <h4>Key Requirements:</h4>
+                            <ul>
+                                <li>Teaching certificate or degree in Education</li>
+                                <li>Experience in primary education</li>
+                                <li>Fluency in English and Kinyarwanda</li>
+                                <li>Passion for child development</li>
+                            </ul>
+                        </div>
+                        <button class="apply-job-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Maintenance Supervisor -->
+                <div class="job-card" data-type="contract" data-department="maintenance">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="job-badge contract">Contract</div>
+                    </div>
+                    <div class="job-content">
+                        <h3 class="job-title">Maintenance Supervisor</h3>
+                        <p class="job-department">
+                            <i class="fas fa-building"></i>
+                            Maintenance Department
+                        </p>
+                        <p class="job-description">
+                            Oversee maintenance operations for diocese properties and coordinate repair activities.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Multiple Locations</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>Posted: Dec 1, 2024</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>Deadline: Dec 31, 2024</span>
+                            </div>
+                        </div>
+                        <div class="job-requirements">
+                            <h4>Key Requirements:</h4>
+                            <ul>
+                                <li>Technical diploma in Construction or related field</li>
+                                <li>5+ years of maintenance experience</li>
+                                <li>Leadership and project management skills</li>
+                                <li>Knowledge of building systems and safety protocols</li>
+                            </ul>
+                        </div>
+                        <button class="apply-job-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Volunteer Coordinator -->
+                <div class="job-card" data-type="volunteer" data-department="pastoral">
+                    <div class="job-header">
+                        <div class="job-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="job-badge volunteer">Volunteer</div>
+                    </div>
+                    <div class="job-content">
+                        <h3 class="job-title">Community Outreach Volunteer</h3>
+                        <p class="job-department">
+                            <i class="fas fa-building"></i>
+                            Pastoral Care Department
+                        </p>
+                        <p class="job-description">
+                            Support community outreach programs and assist with charitable activities in local communities.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Community Centers</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>Posted: Nov 28, 2024</span>
+                            </div>
+                            <div class="job-detail">
+                                <i class="fas fa-clock"></i>
+                                <span>Ongoing Opportunity</span>
+                            </div>
+                        </div>
+                        <div class="job-requirements">
+                            <h4>Key Requirements:</h4>
+                            <ul>
+                                <li>Passion for community service</li>
+                                <li>Good communication skills</li>
+                                <li>Availability for weekend activities</li>
+                                <li>Commitment to helping others</li>
+                            </ul>
+                        </div>
+                        <button class="apply-job-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Information</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Byumba, Northern Province, Rwanda</p>
+                        <p><i class="fas fa-phone"></i> +250 788 123 456</p>
+                        <p><i class="fas fa-envelope"></i> info@diocesebyumba.rw</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Certificates</a></li>
+                        <li><a href="jobs.html">Job Opportunities</a></li>
+                        <li><a href="bishop-meeting.html">Bishop Meeting</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Diocese of Byumba. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/jobs.js"></script>
+</body>
+</html>
